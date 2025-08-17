@@ -4,7 +4,8 @@ import { ACCESS_TOKEN } from "./constants"
 const apiURL = "/choreo-apis/backend-389948499:8000"
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiURL,
+    // baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiURL,
+    baseURL: apiURL,
 })
 
 api.interceptors.request.use(
